@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>修改学生页面</h2>
+<form action="/stu/updateStu" th:method="post">
+姓名：<input th:type="text" th:name="name" th:value="${Stu.name}"/>
+年龄：<input th:type="text" th:name="age" th:value="${Stu.age}"/>
+班级：<input th:type="text" th:name="grade" th:value="${Stu.grade}"/>
+    <input th:type="hidden" th:name="id" e="" th:value="${Stu.id}"/>
+    <input th:type="submit" th:value="提交">
+</form>
+</body>
+</html>
